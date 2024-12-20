@@ -1,0 +1,29 @@
+{
+  "name": "alphabet-clash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "watch": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NurTheDev/Alphabet-clash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NurTheDev/Alphabet-clash/issues"
+  },
+  "homepage": "https://github.com/NurTheDev/Alphabet-clash#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20"
+  }
+}
