@@ -27,7 +27,7 @@
     </section>
     <section
       id="playGame"
-      class="flex flex-col items-center justify-around h-screen"
+      class="flex flex-col items-center justify-around h-screen hidden"
     >
       <div
         class="artboard artboard-horizontal phone-5 bg-white bg-opacity-70 border-[20px] border-[rgba(1,3,19,0.80)] rounded-lg p-4 rounded-2xl flex justify-center items-center"
@@ -131,6 +131,23 @@
           Score
           <img src="images/scrore.svg" alt="scrore.svg" />2
         </button>
+      </div>
+    </section>
+    <section
+      id="gameOver"
+      class="flex flex-col items-center justify-center h-screen text-white text-center"
+    >
+      <div>
+        <div>
+          <span class="text-[64px] font-black font-poppins">Score :</span
+          ><span class="text-[64px]"> 14</span>
+        </div>
+        <button
+          class="bg-white text-black py-5 px-8 rounded-lg font-poppins text-2xl font-semibold mt-14"
+        >
+          Play again
+        </button>
+        <p class="text-2xl font-medium mt-10">Practice will make you Pro</p>
       </div>
     </section>
   </body>
