@@ -20,6 +20,7 @@
   "homepage": "https://github.com/NurTheDev/Alphabet-clash#readme",
   "description": "",
   "devDependencies": {
+    "daisyui": "^4.12.22",
     "tailwindcss": "^3.4.17",
     "vite": "^6.0.5"
   },
