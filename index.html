@@ -6,12 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
-  <body
-    class="bg-[#010313] bg-[url('/images/background.png')] min-h-screen bg-no-repeat bg-center"
-  >
+  <body class="bg-[#010313] bg-custom-url min-h-screen bg-no-repeat bg-center">
     <section
       id="homePage"
-      class="flex-col flex items-center justify-center text-white h-screen hidden"
+      class="flex-col flex items-center justify-center text-white h-screen"
     >
       <h1 class="font-anton tracking-tighter text-[170px] font-black">
         ALPHABET CLASH
@@ -20,6 +18,7 @@
         Unleash Your Keyboard Kung Fu : Press “Enter” to Play
       </p>
       <button
+        id="playBtn"
         class="bg-white text-black py-5 px-8 rounded-lg font-poppins text-2xl font-semibold mt-14"
       >
         Play Now
@@ -30,96 +29,151 @@
       class="flex flex-col items-center justify-around h-screen hidden"
     >
       <div
-        class="artboard artboard-horizontal phone-5 bg-white bg-opacity-70 border-[20px] border-[rgba(1,3,19,0.80)] rounded-lg p-4 rounded-2xl flex justify-center items-center"
+        class="artboard artboard-horizontal phone-5 bg-white bg-opacity-70 border-[20px] border-[rgba(1,3,19,0.80)] p-4 rounded-2xl flex justify-center items-center"
       >
-        <h2 class="text-[#010313] text-[128px] font-black">Y</h2>
+        <h2 id="letter" class="text-[#010313] text-[128px] font-black"></h2>
       </div>
       <div>
         <div class="my-1 flex w-full justify-center gap-1">
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="w"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >w</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="e"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >e</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="q"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >q</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="r"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >r</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="t"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >t</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="y"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >y</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="u"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >u</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="i"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >i</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="o"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >o</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="p"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >p</kbd
           >
         </div>
         <div class="my-1 flex w-full justify-center gap-1">
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="a"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >a</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="s"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >s</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="d"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >d</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="f"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >f</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="g"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >g</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="h"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >h</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="j"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >j</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="k"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >k</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="l"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >l</kbd
           >
         </div>
         <div class="my-1 flex w-full justify-center gap-1">
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="z"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >z</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="x"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >x</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="c"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >c</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="v"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >v</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="b"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >b</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="n"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >n</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+          <kbd
+            id="m"
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
             >m</kbd
           >
-          <kbd class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
-            >/</kbd
+          <kb
+            id="/"
+            d
+            class="kbd w-[55px] h-[52px] text-xl font-medium font-anton"
+            >/</kb
           >
         </div>
       </div>
@@ -135,20 +189,23 @@
     </section>
     <section
       id="gameOver"
-      class="flex flex-col items-center justify-center h-screen text-white text-center"
+      class="flex-col items-center justify-center h-screen text-white text-center flex hidden"
     >
-      <div>
+      <div
+        class="w-[396px] h-[282px] rounded-2xl border border-[rgba(255,255,255,0.20)] bg-custom-gradient"
+      >
         <div>
           <span class="text-[64px] font-black font-poppins">Score :</span
           ><span class="text-[64px]"> 14</span>
         </div>
         <button
-          class="bg-white text-black py-5 px-8 rounded-lg font-poppins text-2xl font-semibold mt-14"
+          class="bg-white text-black py-5 px-8 rounded-lg font-poppins text-2xl font-semibold"
         >
           Play again
         </button>
         <p class="text-2xl font-medium mt-10">Practice will make you Pro</p>
       </div>
     </section>
+    <script src="src/main.js"></script>
   </body>
 </html>
