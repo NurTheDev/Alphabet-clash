@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: ["./**/*.{html,js}"],
   theme: {
     fontFamily: {
       anton: "var(--anton)",
